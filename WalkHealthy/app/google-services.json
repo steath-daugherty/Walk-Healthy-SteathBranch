@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "202087604540",
+    "firebase_url": "https://androidauthentication-cc8a0.firebaseio.com",
+    "project_id": "androidauthentication-cc8a0",
+    "storage_bucket": "androidauthentication-cc8a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202087604540:android:70649413b23337de",
+        "android_client_info": {
+          "package_name": "com.example.kevin.walkhealthy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202087604540-07g0oveclq9ck7tcspvq95eiqrikdvtm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kevin.walkhealthy",
+            "certificate_hash": "3c1b935b725e45d23c4e226667448fe1a6e6e96d"
+          }
+        },
+        {
+          "client_id": "202087604540-sf1skl9rv78dhie822d0niq7p813e7b6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kevin.walkhealthy",
+            "certificate_hash": "ac8f0d80c9155db215b48daabe59fd962a0d3a63"
+          }
+        },
+        {
+          "client_id": "202087604540-5si9b7oacvnqhu9gd6ifpngitvm8dl5n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kevin.walkhealthy",
+            "certificate_hash": "5fe39669c1e8175f871b16f79af67a7549660f06"
+          }
+        },
+        {
+          "client_id": "202087604540-3t8d93s8j7lb46f3isg9f6j95vdgme8h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kevin.walkhealthy",
+            "certificate_hash": "9ccad36a1ae0c2c716936e0e1b4d49d324ff6e17"
+          }
+        },
+        {
+          "client_id": "202087604540-vsla7sh5cvdducs8cm74qjbomrs9csal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLdaM5SYCHTO5wIWsZVz8Ks7gqLUWRpXg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202087604540-vsla7sh5cvdducs8cm74qjbomrs9csal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

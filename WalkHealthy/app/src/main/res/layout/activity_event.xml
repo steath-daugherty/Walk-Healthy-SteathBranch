@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:context="com.example.kevin.walkhealthy.MainActivity">
+
+
+        <Button
+            android:id="@+id/btnSearchEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search"
+            app:layout_constraintBottom_toTopOf="@+id/btnCreateEvent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:ems="10"
+            android:hint="Enter Event Location"
+            android:inputType="textPersonName"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/btnSearchEvent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/btnCreateEvent"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Create An Event"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.556"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ListView
+            android:id="@+id/eventList"
+            android:layout_width="match_parent"
+            android:layout_height="458dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerFilterIntensity" />
+
+        <Button
+            android:id="@+id/searchRefinement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refine Search"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/editTextLocation"
+            app:layout_constraintHorizontal_bias="0.575"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="time"
+            android:selectAllOnFocus="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btnFilterTime"
+            tools:layout_editor_absoluteX="110dp" />
+
+        <Button
+            android:id="@+id/btnFilterTime"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:elevation="0dp"
+            android:text="Filter"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSearchEvent"
+            tools:layout_editor_absoluteX="148dp" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="389dp"
+            android:layout_height="353dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/editTextLocation"
+            app:layout_constraintTop_toTopOf="@+id/spinnerFilterIntensity"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <Button
+            android:id="@+id/btnSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:text="Select Date"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnSearchEvent" />
+
+        <Spinner
+            android:id="@+id/spinnerFilterIntensity"
+            android:layout_width="383dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="177dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="179dp"
+            android:layout_height="248dp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="36dp">
+
+            <RadioButton
+                android:id="@+id/radioWalk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Walk"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/radioJog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jog"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/radioRun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Run"
+                android:visibility="visible" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnFilterIntensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            tools:layout_editor_absoluteX="148dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee">
+
+    </ListView>
+</android.support.v4.widget.DrawerLayout>

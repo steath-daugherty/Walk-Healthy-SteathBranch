@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Walk Healthy</string>
+    <string-array name="Refined">
+        <item>Time</item>
+        <item>Intensity</item>
+        <item>Duration</item>
+    </string-array>
+    <string name="title_activity_register_new_user">RegisterNewUserActivity</string>
+</resources>
